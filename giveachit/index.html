@@ -23,7 +23,7 @@
   header .inner{max-width:760px;margin:0 auto}
   header h1{margin:0 0 6px; font-size:30px; letter-spacing:-.4px}
   header p{margin:0; opacity:.92; font-size:16px}
-  .badge{display:inline-block; margin-bottom:14px; font-size:34px; line-height:1}
+  .badge{display:inline-block; margin-bottom:14px; width:84px; height:84px; border-radius:18px; box-shadow:0 4px 14px rgba(0,0,0,.18)}
   h2{
     color:var(--green-dark); font-size:20px; margin:38px 0 6px;
     padding-bottom:8px; border-bottom:2px solid var(--green-light);
@@ -46,6 +46,8 @@
   ul{padding-left:22px; margin:8px 0}
   li{margin:4px 0}
   code{background:#eef4ef; padding:1px 6px; border-radius:5px; font-size:14px}
+  .back{display:inline-block; margin-top:22px; font-size:15px; font-weight:600; color:var(--green-dark)}
+  .back:hover{text-decoration:underline}
   footer{
     margin-top:48px; padding-top:20px; border-top:1px solid var(--line);
     color:var(--muted); font-size:14px; text-align:center;
@@ -57,13 +59,15 @@
 
 <header>
   <div class="inner">
-    <div class="badge">🎫</div>
+    <img class="badge" src="../icon.png" alt="Give A Chit app icon" width="84" height="84">
     <h1>Give A Chit — Support</h1>
     <p>Help, answers, and how to reach us</p>
   </div>
 </header>
 
 <div class="wrap">
+
+  <a class="back" href="../index.html">&larr; Epic Custom Apps</a>
 
   <p class="lead">
     Give A Chit tracks whose turn it is. The “chit” is a virtual token that passes

@@ -23,7 +23,7 @@
   header .inner{max-width:820px;margin:0 auto}
   header h1{margin:0 0 8px; font-size:34px; letter-spacing:-.5px}
   header p{margin:0; opacity:.92; font-size:17px}
-  .logo{display:inline-block; margin-bottom:16px; font-size:40px; line-height:1}
+  .logo{display:inline-block; margin-bottom:16px; width:96px; height:96px; border-radius:21px; box-shadow:0 4px 14px rgba(0,0,0,.18)}
   h2{
     color:var(--green-dark); font-size:22px; margin:44px 0 8px;
     padding-bottom:8px; border-bottom:2px solid var(--green-light);
@@ -36,7 +36,7 @@
     background:var(--green-light); border:1px solid var(--line);
     border-radius:14px; padding:22px 22px;
   }
-  .app .icon{font-size:40px; line-height:1; flex:0 0 auto}
+  .app .icon{width:60px; height:60px; border-radius:13px; flex:0 0 auto}
   .app .body{flex:1 1 auto}
   .app h3{margin:0 0 4px; font-size:20px; color:var(--ink)}
   .app p{margin:4px 0 12px; color:var(--muted)}
@@ -59,9 +59,9 @@
 
 <header>
   <div class="inner">
-    <div class="logo">🎫</div>
+    <img class="logo" src="icon.png" alt="Give A Chit app icon" width="96" height="96">
     <h1>Epic Custom Apps</h1>
-    <p>Intuitive, thoughtful apps for iPhone and iPad</p>
+    <p>Simple, thoughtful apps for iPhone and iPad</p>
   </div>
 </header>
 
@@ -78,14 +78,14 @@
   <div class="apps">
 
     <div class="app">
-      <div class="icon">🎫</div>
+      <img class="icon" src="icon.png" alt="Give A Chit" width="60" height="60">
       <div class="body">
         <h3>Give A Chit</h3>
         <p>Tracks whose turn it is. The “chit” passes from person to person in a
            group — great for book clubs, hosting duties, gift exchanges, carpools,
            chores, or any rotation.</p>
         <div class="links">
-          <a href="giveachit/">Support</a>
+          <a href="giveachit/index.html">Support</a>
           <a class="secondary" href="giveachit/privacy.html">Privacy</a>
         </div>
       </div>
