@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log It All — Support</title>
+<style>
+  :root{
+    --green:#2E7D32; --green-dark:#1B5E20; --green-light:#E8F5E9;
+    --ink:#222; --muted:#5b6b5c; --line:#d7e6d8; --bg:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 20px 64px}
+  header{
+    background:linear-gradient(160deg,var(--green) 0%,var(--green-dark) 100%);
+    color:#fff; padding:44px 20px 40px; text-align:center;
+  }
+  header .inner{max-width:760px;margin:0 auto}
+  header h1{margin:0 0 6px; font-size:30px; letter-spacing:-.4px}
+  header p{margin:0; opacity:.92; font-size:16px}
+  .badge{display:inline-block; margin-bottom:14px; width:84px; height:84px; border-radius:18px; box-shadow:0 4px 14px rgba(0,0,0,.18)}
+  h2{
+    color:var(--green-dark); font-size:20px; margin:38px 0 6px;
+    padding-bottom:8px; border-bottom:2px solid var(--green-light);
+  }
+  h3{font-size:16px; margin:22px 0 4px; color:var(--ink)}
+  p{margin:8px 0}
+  .lead{font-size:17px; color:var(--muted); margin-top:18px}
+  .card{
+    background:var(--green-light); border:1px solid var(--line);
+    border-radius:12px; padding:18px 20px; margin:20px 0;
+  }
+  .card h2{margin-top:0; border:0; padding:0}
+  a{color:var(--green-dark); font-weight:600; text-decoration:none}
+  a:hover{text-decoration:underline}
+  .btn{
+    display:inline-block; background:var(--green); color:#fff !important;
+    padding:11px 20px; border-radius:10px; font-weight:600; margin-top:8px;
+  }
+  .btn:hover{background:var(--green-dark); text-decoration:none}
+  ul{padding-left:22px; margin:8px 0}
+  li{margin:4px 0}
+  code{background:#eef4ef; padding:1px 6px; border-radius:5px; font-size:14px}
+  .back{display:inline-block; margin-top:22px; font-size:15px; font-weight:600; color:var(--green-dark)}
+  .back:hover{text-decoration:underline}
+  footer{
+    margin-top:48px; padding-top:20px; border-top:1px solid var(--line);
+    color:var(--muted); font-size:14px; text-align:center;
+  }
+  .kbd{font-weight:600; color:var(--green-dark)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <img class="badge" src="../logitall-icon.png" alt="Log It All app icon" width="84" height="84">
+    <h1>Log It All — Support</h1>
+    <p>Help, answers, and how to reach us</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <a class="back" href="../index.html">&larr; Epic Custom Apps</a>
+
+  <p class="lead">
+    Log It All records timestamped occurrences of anything you want to track — a
+    baby’s naps and feedings, a car’s maintenance, your migraines, household chores,
+    or contracts and renewals. This page covers the questions we hear most. Full help
+    is also built into the app under the <span class="kbd">Help</span> tab.
+  </p>
+
+  <div class="card">
+    <h2>Need a hand?</h2>
+    <p>Email us and we’ll get back to you. Please include your device model and
+       iOS version, and a short description of what happened.</p>
+    <a class="btn" href="mailto:epicCustomApps@icloud.com?subject=Log%20It%20All%20Support">Email Support</a>
+  </div>
+
+  <h2>Getting started</h2>
+
+  <h3>How does Log It All work?</h3>
+  <p>Create an <span class="kbd">event type</span> for anything you want to track —
+     “Change Oil,” “Fed the baby,” “Migraine.” Each event type has a colored quick
+     button; tap it to log an occurrence with the current time. That logged occurrence
+     is a <span class="kbd">logged event</span>, and you can add a note to it whenever
+     you like.</p>
+
+  <h3>What can I track, and how is the time recorded?</h3>
+  <p>Whatever you want. Each event type keeps time at the level you choose:
+     <strong>date and time</strong> (a single moment), <strong>date only</strong>
+     (when the day is all that matters, like an oil change), or
+     <strong>start / end</strong> (a duration, like a workout). You set this in the
+     event type’s Entry Type settings.</p>
+
+  <h3>Do I have to set things up ahead of time?</h3>
+  <p>No. When something happens that you haven’t tracked before, you can create the
+     event type and log it in one step. You can organize things later — or not at all.</p>
+
+  <h2>Organizing</h2>
+
+  <h3>Categories and super categories</h3>
+  <p>Event types can stand on their own or be grouped into a <span class="kbd">category</span>
+     (for example, “Auto Maintenance”). Categories can be nested under a
+     <span class="kbd">super category</span> for a combined timeline across several
+     categories — say a “Cars” super category holding “Chevy” and “Toyota.” Categorizing
+     is optional and can be changed anytime.</p>
+
+  <h3>Can I rename, move, or delete things?</h3>
+  <p>Yes — categories, event types, and logged events all use standard iOS swipe
+     gestures. Deleting a category leaves its event types intact (they become
+     uncategorized); deleting an event type also deletes its logged events. Log It All
+     warns you before anything permanent unless you turn that off in Settings.</p>
+
+  <h2>Reminders</h2>
+
+  <h3>Can Log It All remind me?</h3>
+  <p>Yes. An event type can carry a <strong>recurring</strong> reminder (every N
+     minutes, hours, days, weeks, months, or years — an air filter every 3 months, a
+     temperature every 4 hours). A single logged event can carry a <strong>one-time</strong>
+     reminder for a specific date. Reminders are local to each device, and only future
+     times are ever scheduled, so importing or back-dating never sets one off.</p>
+
+  <h3>How do I stop or pause reminders?</h3>
+  <p>Long-press a reminder you receive and tap <span class="kbd">Pause</span>, or open
+     the event type’s editor and turn <span class="kbd">Remind me</span> off. Paused
+     recurring reminders can be resumed from the event type’s editor.</p>
+
+  <h2>Syncing, backup &amp; reports</h2>
+
+  <h3>How do I sync across my devices?</h3>
+  <p>iCloud sync is <strong>off by default</strong>. Turn on
+     <span class="kbd">Settings → Sync with iCloud</span>, then fully close and reopen
+     the app. Your categories, event types, and entries are then kept in your own
+     private iCloud and mirrored across your devices that have Log It All installed.
+     It’s a good idea to set up on one device first, then turn sync on.</p>
+
+  <h3>How do I back up or restore my data?</h3>
+  <p>In <span class="kbd">Settings</span>, use <span class="kbd">Back up to a file</span>
+     to save everything to a file you can keep (in Files, or by AirDrop/email), and
+     <span class="kbd">Restore from a backup file</span> to bring it back. Restore skips
+     records already present, so it won’t create duplicates — handy before erasing, or
+     when moving to a new device.</p>
+
+  <h3>Can I share a report?</h3>
+  <p>Open a category’s timeline with its calendar button, choose the time period, then
+     tap Share and pick an order (by time, or grouped by event type). The standard share
+     sheet opens as a PDF you can mail, message, save to Files, or print.</p>
+
+  <h3>Can I bring in data from Track’n’Turn?</h3>
+  <p>Yes. In Track’n’Turn, export a file, then in Log It All open
+     <span class="kbd">Settings → Import from Track’n’Turn…</span> and pick it. Its
+     categories, items, and logged occurrences come across. It’s best to import into an
+     empty Log It All.</p>
+
+  <h2>Troubleshooting</h2>
+
+  <h3>My data stopped syncing between devices</h3>
+  <p>This usually follows deleting the iCloud copy (in
+     <span class="kbd">Settings → your name → iCloud → Manage Account Storage</span>)
+     while the app was still installed on a device. First, back up your data
+     (<span class="kbd">Settings → Back up to a file</span>), then
+     <a href="mailto:epicCustomApps@icloud.com?subject=Log%20It%20All%20Sync%20Help">email us</a>
+     — there’s a guided fix and we’ll walk you through it. Your entries are preserved.</p>
+
+  <h3>Why does my iCloud storage list “OmniLog”?</h3>
+  <p>It’s the same app — just its internal storage name. Log It All was first built under
+     the name “OmniLog,” and that original name is permanently part of its iCloud storage.
+     If you see “OmniLog” under Manage Account Storage, nothing is wrong.</p>
+
+  <h2>Privacy &amp; data</h2>
+  <p>Log It All stores your data on your device, and — if you turn on iCloud sync — in
+     your own private iCloud account. There are no ads and no tracking, and we can’t see
+     your data. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+
+  <footer>
+    Log It All is made by Epic Custom Apps.<br>
+    © 2026 Epic Custom Apps. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
