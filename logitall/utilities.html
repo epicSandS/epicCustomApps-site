@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log It All — Advanced Utilities</title>
+<style>
+  :root{
+    --green:#2E7D32; --green-dark:#1B5E20; --green-light:#E8F5E9;
+    --ink:#222; --muted:#5b6b5c; --line:#d7e6d8; --bg:#ffffff;
+    --amber:#8a5a00; --amber-light:#fff6e5; --amber-line:#f0d69a;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 20px 64px}
+  header{
+    background:linear-gradient(160deg,var(--green) 0%,var(--green-dark) 100%);
+    color:#fff; padding:44px 20px 40px; text-align:center;
+  }
+  header .inner{max-width:760px;margin:0 auto}
+  header h1{margin:0 0 6px; font-size:30px; letter-spacing:-.4px}
+  header p{margin:0; opacity:.92; font-size:16px}
+  .badge{display:inline-block; margin-bottom:14px; width:84px; height:84px; border-radius:18px; box-shadow:0 4px 14px rgba(0,0,0,.18)}
+  h2{
+    color:var(--green-dark); font-size:20px; margin:38px 0 6px;
+    padding-bottom:8px; border-bottom:2px solid var(--green-light);
+  }
+  h3{font-size:16px; margin:22px 0 4px; color:var(--ink)}
+  p{margin:8px 0}
+  .lead{font-size:17px; color:var(--muted); margin-top:18px}
+  .card{
+    background:var(--green-light); border:1px solid var(--line);
+    border-radius:12px; padding:18px 20px; margin:20px 0;
+  }
+  .card h2{margin-top:0; border:0; padding:0}
+  .note{
+    background:var(--amber-light); border:1px solid var(--amber-line);
+    border-radius:12px; padding:14px 18px; margin:16px 0; color:var(--amber);
+  }
+  .note strong{color:var(--amber)}
+  a{color:var(--green-dark); font-weight:600; text-decoration:none}
+  a:hover{text-decoration:underline}
+  .btn{
+    display:inline-block; background:var(--green); color:#fff !important;
+    padding:11px 20px; border-radius:10px; font-weight:600; margin-top:8px;
+  }
+  .btn:hover{background:var(--green-dark); text-decoration:none}
+  ul{padding-left:22px; margin:8px 0}
+  li{margin:4px 0}
+  code{background:#eef4ef; padding:1px 6px; border-radius:5px; font-size:14px}
+  .back{display:inline-block; margin-top:22px; font-size:15px; font-weight:600; color:var(--green-dark)}
+  .back:hover{text-decoration:underline}
+  .steps{background:#f6faf6; border:1px solid var(--line); border-radius:12px; padding:14px 20px; margin:16px 0}
+  footer{
+    margin-top:48px; padding-top:20px; border-top:1px solid var(--line);
+    color:var(--muted); font-size:14px; text-align:center;
+  }
+  .kbd{font-weight:600; color:var(--green-dark)}
+  .tier{font-size:13px; font-weight:700; letter-spacing:.3px; text-transform:uppercase}
+  .tier.safe{color:var(--green)}
+  .tier.adv{color:var(--amber)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <img class="badge" src="../logitall-icon.png" alt="Log It All app icon" width="84" height="84">
+    <h1>Advanced Utilities</h1>
+    <p>A few hidden, rarely-needed tools — and how to reach them</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <a class="back" href="index.html">&larr; Log It All Support</a>
+
+  <p class="lead">
+    Log It All keeps three optional tools tucked away out of sight. <strong>Most people
+    will never need them</strong> — they exist for uncommon situations, mostly around
+    iCloud sync. This page explains what each one does, when it might help, and exactly
+    how to open them.
+  </p>
+
+  <h2>How to open them</h2>
+  <div class="steps">
+    <p>They live behind a hidden gesture so they can’t be triggered by accident:</p>
+    <ul>
+      <li>Open the <span class="kbd">Help</span> tab in Log It All.</li>
+      <li>Scroll to the very bottom, to the <span class="kbd">About Log It All</span> heading.</li>
+      <li><strong>Press and hold that heading for about one second.</strong></li>
+    </ul>
+    <p>A small menu appears with the three tools below.</p>
+  </div>
+
+  <div class="note">
+    <strong>Not sure which one you need?</strong> Please
+    <a href="mailto:epicCustomApps@icloud.com?subject=Log%20It%20All%20Utilities%20Help">email us</a>
+    before running either repair tool and we’ll walk you through it. They’re designed to be
+    safe, but they’re last-resort tools — a quick message saves guesswork.
+  </div>
+
+  <h2>1. Export Diagnostics Log <span class="tier safe">Safe</span></h2>
+  <p><strong>What it does:</strong> saves a plain-text log of the app’s recent activity
+     (sync events and data snapshots) to a file you can share.</p>
+  <p><strong>When to use it:</strong> this is the safe first step whenever something seems
+     off. Export the log and email it to us — it helps us see what happened and point you
+     to the right fix.</p>
+  <p><strong>Is it safe?</strong> Completely. It only reads and exports information; it
+     changes nothing in your data.</p>
+
+  <h2>2. Clean Up Duplicates <span class="tier adv">Advanced</span></h2>
+  <p><strong>What it does:</strong> finds duplicate categories and event types and merges
+     them into one, and removes duplicate or stranded log entries — leaving a single clean
+     copy of each.</p>
+  <p><strong>When to use it:</strong> if you ever see the same category, event, or entry
+     appear twice. This most often follows turning iCloud sync on, or importing/restoring
+     data.</p>
+  <p><strong>Before you run it:</strong></p>
+  <ul>
+    <li><strong>Let iCloud finish syncing first.</strong> On a good connection, open the app
+        and wait a minute or two after turning sync on or importing — otherwise an item still
+        arriving from another device could be mistaken for a duplicate.</li>
+    <li>It can’t be undone, so it’s wise to <span class="kbd">Back up to a file</span> first
+        (in Settings).</li>
+  </ul>
+
+  <h2>3. Fix Stuck iCloud Sync <span class="tier adv">Advanced</span></h2>
+  <p><strong>What it does:</strong> backs up your data, rebuilds the app’s local storage to
+     clear a stuck sync state, restores your data, and re-uploads it fresh. It will ask you
+     to fully close and reopen the app to finish.</p>
+  <p><strong>When to use it:</strong> only if data has <em>stopped</em> syncing between your
+     devices — usually after the iCloud copy was deleted (in
+     <span class="kbd">Settings → your name → iCloud → Manage Account Storage</span>) while the
+     app was still installed.</p>
+  <p><strong>Before you run it:</strong></p>
+  <ul>
+    <li><strong>Don’t use it when sync is working normally.</strong> Rebuilding while iCloud
+        still holds your data can create duplicates.</li>
+    <li>Your entries are preserved — it makes a backup before doing anything — but if you’re
+        unsure whether this is the right tool, please contact us first.</li>
+  </ul>
+
+  <div class="card">
+    <h2>Still stuck?</h2>
+    <p>Email us with your device model, iOS version, and a short description of what
+       happened — and, if you can, attach the diagnostics log from tool&nbsp;1.</p>
+    <a class="btn" href="mailto:epicCustomApps@icloud.com?subject=Log%20It%20All%20Utilities%20Help">Email Support</a>
+  </div>
+
+  <a class="back" href="index.html">&larr; Back to Log It All Support</a>
+
+  <footer>
+    Log It All is made by Epic Custom Apps.<br>
+    © 2026 Epic Custom Apps. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
