@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trak'n'Turn — Support</title>
+<style>
+  :root{
+    --green:#2E7D32; --green-dark:#1B5E20; --green-light:#E8F5E9;
+    --ink:#222; --muted:#5b6b5c; --line:#d7e6d8; --bg:#ffffff;
+    --amber:#8a5a00; --amber-light:#fff6e5; --amber-line:#f0d69a;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 20px 64px}
+  header{
+    background:linear-gradient(160deg,var(--green) 0%,var(--green-dark) 100%);
+    color:#fff; padding:44px 20px 40px; text-align:center;
+  }
+  header .inner{max-width:760px;margin:0 auto}
+  header h1{margin:0 0 6px; font-size:30px; letter-spacing:-.4px}
+  header p{margin:0; opacity:.92; font-size:16px}
+  h2{
+    color:var(--green-dark); font-size:20px; margin:38px 0 6px;
+    padding-bottom:8px; border-bottom:2px solid var(--green-light);
+  }
+  h3{font-size:16px; margin:22px 0 4px; color:var(--ink)}
+  p{margin:8px 0}
+  .lead{font-size:17px; color:var(--muted); margin-top:18px}
+  .card{
+    background:var(--green-light); border:1px solid var(--line);
+    border-radius:12px; padding:18px 20px; margin:20px 0;
+  }
+  .card h2{margin-top:0; border:0; padding:0}
+  .note{
+    background:var(--amber-light); border:1px solid var(--amber-line);
+    border-radius:12px; padding:14px 18px; margin:16px 0; color:var(--amber);
+  }
+  .note strong{color:var(--amber)}
+  a{color:var(--green-dark); font-weight:600; text-decoration:none}
+  a:hover{text-decoration:underline}
+  .btn{
+    display:inline-block; background:var(--green); color:#fff !important;
+    padding:11px 20px; border-radius:10px; font-weight:600; margin-top:8px;
+  }
+  .btn:hover{background:var(--green-dark); text-decoration:none}
+  ol,ul{padding-left:22px; margin:8px 0}
+  li{margin:6px 0}
+  .kbd{font-weight:600; color:var(--green-dark)}
+  .steps{background:#f6faf6; border:1px solid var(--line); border-radius:12px; padding:14px 20px 16px; margin:16px 0}
+  .back{display:inline-block; margin-top:22px; font-size:15px; font-weight:600; color:var(--green-dark)}
+  .back:hover{text-decoration:underline}
+  footer{
+    margin-top:48px; padding-top:20px; border-top:1px solid var(--line);
+    color:var(--muted); font-size:14px; text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <h1>Trak'n'Turn</h1>
+    <p>How to move your Trak'n'Turn data forward</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <a class="back" href="../index.html">&larr; Epic Custom Apps</a>
+
+  <p class="lead">
+    Trak'n'Turn helps you track what's important to you. Its newest version adds a
+    simple way to <strong>carry your tracking data over to Log It All</strong> — our
+    flexible logging app — so your history comes with you.
+  </p>
+
+  <h2>Moving your data to Log It All</h2>
+  <p>Log It All is a free app that records timestamped entries for anything you track.
+     Trak'n'Turn can export your tracking data as a file, and Log It All can import it —
+     your categories become Log It All categories, your items become events, and each
+     logged occurrence becomes an entry.</p>
+
+  <div class="steps">
+    <ol>
+      <li>In <span class="kbd">Trak'n'Turn</span>, open <span class="kbd">Trak'n'Turn Help</span> and tap
+          <span class="kbd">Export Data (for Log It All)</span>. Save or share the file it creates.</li>
+      <li>Install <span class="kbd">Log It All</span> from the App Store (it's free) if you don't have it yet.</li>
+      <li>In <span class="kbd">Log It All</span>, open the <span class="kbd">Tools</span> tab and tap
+          <span class="kbd">Import from Trak'n'Turn…</span>, then choose the file you saved.</li>
+    </ol>
+    <p style="margin:6px 0 0">That's it — your tracking history is now in Log It All. Full details are on
+       the <span class="kbd">Help</span> tab inside Log It All.</p>
+  </div>
+
+  <h2>What about “whose turn is it?”</h2>
+  <p>Trak'n'Turn could also track <em>whose turn it is</em>. That turn-taking side isn't part
+     of the Log It All export — Log It All is a logger, not a turn tracker.</p>
+  <div class="note">
+    <strong>Interested in moving your turn-taking groups?</strong> Our app
+    <a href="../giveachit/index.html">Give A Chit</a> is built for turn-taking. We haven't built
+    an automatic path for it yet — if you'd like one,
+    <a href="mailto:epicCustomApps@icloud.com?subject=Trak%27n%27Turn%20turn-taking%20to%20Give%20A%20Chit">email us</a>
+    and we'll consider it. The more interest we hear, the sooner we'll look into it.
+  </div>
+
+  <a class="back" href="../index.html">&larr; Back to Epic Custom Apps</a>
+
+  <footer>
+    Trak'n'Turn is made by Epic Custom Apps.<br>
+    © 2026 Epic Custom Apps. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
