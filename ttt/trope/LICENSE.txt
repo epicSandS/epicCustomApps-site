@@ -1,0 +1,20 @@
+Torah chant recordings — license and attribution
+=================================================
+
+The MP3 recordings in this folder are from the PocketTorah project
+(not-a-box media lab — Russel Neiss and Charlie Schwartz), chanted by
+PocketTorah's volunteer Torah readers:
+
+  Etta Abramson, Joshua Foster, Eitan Konigsberg, Eytan Kurshan, Ari Lucas,
+  Rabbi Ita Paskind, Rebecca Russo, Joshua Schwartz, Abigail Teller
+
+Source:  https://archive.org/details/PockettorahAudioFiles
+         https://www.pockettorah.com
+
+They are licensed under the Creative Commons Attribution-ShareAlike 3.0
+Unported license (CC BY-SA 3.0):
+         https://creativecommons.org/licenses/by-sa/3.0/
+
+The recordings are redistributed here unmodified, for use by the Torah
+Trope Tutor app. The .txt files beside them are PocketTorah's verse-timing
+labels for the same recordings (github.com/rneiss/PocketTorah).

@@ -36,6 +36,10 @@
   .back:hover{text-decoration:underline}
   footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; text-align:center;}
   strong{color:var(--ink)}
+  .linkbtn{font:inherit; font-weight:600; color:var(--green-dark); background:none; border:0;
+    padding:0; cursor:pointer; text-decoration:underline dotted; text-underline-offset:3px}
+  .readers{columns:2; background:var(--green-light); border:1px solid var(--line);
+    border-radius:12px; padding:12px 16px 12px 36px; margin:10px 0}
 </style>
 </head>
 <body>
@@ -49,7 +53,7 @@
 
   <p class="lead">
     Torah Trope Tutor helps a <strong>ba'al koreh</strong> (Torah reader) learn and
-    rehearse a reading. It shows the text as a digital <em>Tikkun</em>, lets you remove
+    practice a reading. It shows the text as a digital <em>Tikkun</em>, lets you remove
     the vowels and cantillation marks a step at a time until you can read it the way it
     appears on the scroll, and lets you mark and practice your assigned verses — and hear
     how they should be chanted. Full help is also built into the app under the
@@ -67,24 +71,89 @@
 
   <h3>What does the app do?</h3>
   <p>A Sefer Torah is written consonants-only — no <em>nikkud</em> (vowels) and no
-     <em>ta'amei hamikra</em> (cantillation marks). Torah Trope Tutor shows the text at
-     four levels of reading help, from most to least: <strong>Full</strong> (vowels +
+     <em>ta'amei hamikra</em> (cantillation marks). Torah Trope Tutor shows the text as a
+     digital Tikkun, laid out column by column the way it appears on the scroll, at four
+     levels of reading help, from most to least: <strong>Full</strong> (vowels +
      cantillation), <strong>Vowels</strong> (vowels only), <strong>Plain</strong>
      (letters only), and <strong>Bimah</strong> (the scribal scroll script, as on a
-     Sefer Torah). Words stay in the same position at every level, so your eye learns
-     where each word sits on the scroll.</p>
+     Sefer Torah). Words stay in the same place at every level, so your eye learns
+     where each word sits on the scroll. Below Full, tap any line to peek at it fully
+     pointed.</p>
 
-  <h3>How do I find and mark my reading?</h3>
-  <p>On the <span class="kbd">Read</span> tab, choose your <strong>book</strong>, then the
-     <strong>parsha</strong>, then the <strong>aliyah</strong> — the scroll opens right
-     there. Tap <span class="kbd">⋯ → Mark my section</span>, tap the first and last line
-     of your verses, and Save. Then work down the levels as you improve, tapping any line
-     to peek it fully pointed.</p>
+  <h3>How do I set up my reading?</h3>
+  <p>On the <span class="kbd">Read</span> tab, tap <span class="kbd">Find a reading by
+     date</span> (or any reading under <span class="kbd">This week</span>), check the date,
+     choose the aliyah or aliyot you've been given, and Save. The verses come straight from the
+     reading calendar, so they are exact. Your readings are kept in
+     <span class="kbd">My Readings</span> — Upcoming, Marked sections, and Past.</p>
+  <p>If your section isn't a whole aliyah — for example, several readers are sharing
+     one — open the book and parsha, tap <span class="kbd">⋯ → Mark my section</span>,
+     tap the first and last line of your verses, and Save.</p>
 
   <h3>Hearing the chant</h3>
-  <p>With a section marked, tap <span class="kbd">Listen</span> to hear the correct trope
-     for your verses; the verse being chanted is highlighted. The first play downloads the
-     recording; after that it's cached on your device.</p>
+  <p>Tap <span class="kbd">Listen</span> to hear your section chanted. The trope phrase
+     being chanted is highlighted — on the levels that show the te'amim, its marks turn
+     blue — and the page turns by itself when the chanting moves on to the next column.
+     Tap <span class="kbd">Pause</span> to stop, then <span class="kbd">Resume</span> to carry on from the same word
+     or <span class="kbd">Restart</span> to hear your section from the beginning.
+     The first play downloads the recording; after that it's cached on your device.</p>
+
+  <h3>The end of my aliyah doesn't sound like an aliyah ending</h3>
+  <p>The recordings were made in the traditional seven aliyot, so they carry the closing
+     aliyah melody only where a traditional aliyah ends. If yours ends elsewhere — as most
+     triennial aliyot do — My Readings shows <strong>“Ends: …”</strong> and the scroll
+     view has an <span class="kbd">Ending</span> button that plays a real aliyah ending
+     from the recordings with exactly the same te'amim as your last verse.</p>
+
+  <h2>The reading calendar</h2>
+
+  <h3>How does the app know this week's reading?</h3>
+  <p>The calendar comes from Hebcal and runs from 1939 to 2040. It covers Shabbat
+     (including combined parshiot such as Vayakhel-Pekudei), festivals, Rosh Chodesh,
+     Chanukah, Purim and fast days, and Monday and Thursday from 2016. Pick any date to see
+     its reading. <span class="kbd">This week</span> lists the readings from today through
+     Shabbat — on a festival that is read from two scrolls, you choose your aliyot and the
+     maftir is saved as its own reading.</p>
+
+  <h3>Finding a Bar or Bat Mitzvah parsha</h3>
+  <p>On the <span class="kbd">Tools</span> tab, tap
+     <span class="kbd">Find My Bar/Bat Mitzvah Parsha</span>, turn the wheels to the date of
+     the Bar or Bat Mitzvah itself (not the birthday), choose the aliyot and Save. The reading
+     opens on the Read tab and is kept in My Readings, ready to practice for an anniversary.</p>
+
+  <h3>Monday and Thursday</h3>
+  <p>Three people read the opening of the coming Shabbat's parsha. Many congregations on
+     the triennial cycle read those same verses; some read the opening of that year's
+     triennial portion instead — check with your rabbi, chazzan or gabbai.</p>
+
+  <h3>Israel or outside Israel? Full parsha or triennial?</h3>
+  <p>Set <span class="kbd">Settings → Location</span>: in some years the parsha read in
+     Israel differs from the rest of the world for a few weeks after Pesach or Shavuot.
+     If your congregation reads a third of the parsha each year, choose the triennial
+     cycle under <span class="kbd">Settings → Aliyot</span> and your system under
+     <span class="kbd">Triennial calendar</span>; the year of the cycle is worked out
+     from the date.</p>
+
+  <h3>Why is there no Listen for Rosh Hashanah and Yom Kippur?</h3>
+  <p>On the High Holy Days the Torah is chanted to a special melody. The words and
+     te'amim are the same, but every recording in the app uses the regular melody, so
+     Listen is turned off for those readings. You can still use every level of the scroll
+     view to learn the text and the trope. We hope to add High Holy Day recordings in a
+     future version.</p>
+
+  <h2>The Tools tab</h2>
+  <ul>
+    <li><strong>Find My Bar/Bat Mitzvah Parsha</strong> — the reading for any date back to
+        1939.</li>
+    <li><strong>Alphabet</strong> — the letters in print and in both scribal hands.</li>
+    <li><strong>Trope phrases</strong> — the phrase families, each with a real example
+        from the Torah you can hear.</li>
+    <li><strong>End of aliyah trope phrases</strong> — real aliyah endings, grouped by the
+        phrase that ends the verse, most with a mid-aliyah version to compare.</li>
+  </ul>
+  <p>Tap an example's reference to see it on the scroll: its words are lit in light blue,
+     and <span class="kbd">Listen to verse</span> plays the whole verse, lighting each
+     phrase in orange as it's chanted.</p>
 
   <h2>Matching your scroll</h2>
 
@@ -102,20 +171,31 @@
      guidance comes first.</p>
 
   <h2>Syncing &amp; offline</h2>
-  <p>Your marked sections and settings sync across devices signed in to the same iCloud
+  <p>Your readings and settings sync across devices signed in to the same iCloud
      account. The text works offline; you need a connection the first time you play a
      section's chant, after which it's cached. You can clear cached audio in
      <span class="kbd">Settings → Offline audio</span>.</p>
 
   <h2>Scope</h2>
-  <p>Torah Trope Tutor currently covers the <strong>Torah</strong> reading. Haftarah and
-     the megillot are separate readings with their own melodies and are not included.</p>
+  <p>Torah Trope Tutor covers the <strong>Torah</strong> reading. Haftarah and the
+     megillot are separate readings with their own melodies and are not included.</p>
 
   <h2>Credits</h2>
-  <p>The chant recordings are from the <strong>PocketTorah</strong> project, chanted by
-     Rabbi Ita Paskind (Creative Commons BY-SA). Scroll layout from tikkun.io; text from
-     the Westminster Leningrad Codex; scribal fonts from the Culmus project. Full credits
-     are in the app's <span class="kbd">About</span> tab.</p>
+  <p>The chant recordings are from the <strong>PocketTorah</strong> project, created by
+     Russel Neiss and Charlie Schwartz (<em>not-a-box media lab</em>), and chanted by its
+     <button type="button" class="linkbtn" aria-expanded="false" aria-controls="readers"
+       onclick="var l=document.getElementById('readers');var o=l.hidden;l.hidden=!o;this.setAttribute('aria-expanded',o);">volunteer readers</button>.
+     The recordings are used under the
+     <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+     Attribution-ShareAlike 3.0</a> license; the license covers the recordings, not the
+     app. Reading calendar and aliyah divisions from Hebcal; scroll layout from tikkun.io;
+     text from the Westminster Leningrad Codex; scribal fonts from the Culmus project.
+     Full credits are in the app's <span class="kbd">About</span> tab.</p>
+  <ul id="readers" class="readers" hidden>
+    <li>Etta Abramson</li><li>Joshua Foster</li><li>Eitan Konigsberg</li>
+    <li>Eytan Kurshan</li><li>Ari Lucas</li><li>Rabbi Ita Paskind</li>
+    <li>Rebecca Russo</li><li>Joshua Schwartz</li><li>Abigail Teller</li>
+  </ul>
 
   <h2>Privacy &amp; data</h2>
   <p>Torah Trope Tutor keeps your data on your device and — through iCloud — in your own
